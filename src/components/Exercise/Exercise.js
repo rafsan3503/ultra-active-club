@@ -12,7 +12,7 @@ const Exercise = ({ exercise, getExerciseTime, cartText }) => {
         <div className="card-body">
           <h2 className="card-title">{exercise.name}</h2>
           <p>For Age: 20-25</p>
-          <p>Time required: {exercise.seconds} s</p>
+          <p>Time required: {exercise.seconds}s</p>
           <div className="card-actions justify-end">
             <div
               onClick={() => getExerciseTime(exercise.seconds)}
