@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Blog from '../Blogs/Blog';
 import Exercises from '../Exercises/Exercise';
 import UserDetails from '../UserDetails/UserDetails';
 
@@ -19,6 +20,8 @@ const Home = () => {
               cartText={cartText}
               getExerciseTime={getExerciseTime}
             ></Exercises>
+
+            <Blog></Blog>
           </div>
         </div>
 
