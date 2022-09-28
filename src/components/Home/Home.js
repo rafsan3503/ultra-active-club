@@ -14,7 +14,7 @@ const Home = () => {
         <div className="w-full lg:w-3/4 min-h-screen flex justify-center items-center p-20">
           <div className="text-left">
             <div className='flex items-center gap-4'>
-              <img className='w-16'
+              <img className='w-10 lg:w-16'
                 src={logo}
                 alt=""
               />
