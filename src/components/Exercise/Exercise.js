@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Exercise = ({exercise}) => {
+const Exercise = ({ exercise }) => {
+    const [cartText, setCartText] = useState('Add to cart');
     return (
-      <div className='mt-10'>
+      <div className="mt-10">
         <div className="card bg-base-100 shadow-xl">
           <figure>
-            <img src={exercise.img} alt="Shoes" />
+            <img
+              className="w-96 h-96 object-cover rounded-xl"
+              src={exercise.img}
+              alt="Shoes"
+            />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">
-              Shoes!
-              <div className="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <h2 className="card-title">{exercise.name}</h2>
+                    <p>For Age: 20-25</p>
+            <p>Time required: {exercise.seconds} s</p>
             <div className="card-actions justify-end">
-              <div className="badge badge-outline">Fashion</div>
-              <div className="badge badge-outline">Products</div>
+              <div onClick={()=> setCartText('Added')} className="btn btn-outline">{cartText}</div>
             </div>
           </div>
         </div>
