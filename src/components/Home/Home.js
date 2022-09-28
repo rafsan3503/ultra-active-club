@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Blog from '../Blogs/Blog';
-import Exercises from '../Exercises/Exercise';
+import Exercises from '../Exercises/Exercises';
 import UserDetails from '../UserDetails/UserDetails';
 import logo from "../../Assets/pngegg.png";
 
