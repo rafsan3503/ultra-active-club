@@ -18,7 +18,7 @@ const Exercise = ({ exercise, getExerciseTime, cartText }) => {
               onClick={() => getExerciseTime(exercise.seconds)}
               className="btn btn-outline"
             >
-              {cartText}
+              Add to Cart
             </div>
           </div>
         </div>

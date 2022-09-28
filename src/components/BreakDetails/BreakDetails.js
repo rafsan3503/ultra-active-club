@@ -10,35 +10,35 @@ const BreakDetails = ({ getValue }) => {
             onClick={(e) => getValue(e)}
             className="rounded-full bg-white text-black border-2 p-3"
           >
-            10
+            10s
           </div>
 
           <div
             onClick={(e) => getValue(e)}
             className="rounded-full bg-white text-black border-2 p-3"
           >
-            20
+            20s
           </div>
 
           <div
             onClick={(e) => getValue(e)}
             className="rounded-full bg-white text-black border-2 p-3"
           >
-            20
+            30s
           </div>
 
           <div
             onClick={(e) => getValue(e)}
             className="rounded-full bg-white text-black border-2 p-3"
           >
-            30
+            40s
           </div>
 
           <div
             onClick={(e) => getValue(e)}
             className="rounded-full bg-white text-black border-2 p-3"
           >
-            40
+            50s
           </div>
         </div>
       </div>

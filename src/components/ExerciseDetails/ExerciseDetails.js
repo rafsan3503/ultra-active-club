@@ -9,7 +9,7 @@ const ExerciseDetails = ({ breakLs, exerciseTime }) => {
 
       <div className="flex bg-yellow-50 rounded-lg text-black justify-between px-3 py-4 text-xl font-semibold my-5">
         <h2>Break Time</h2>
-        <h2 className="text-slate-500">{breakLs}s</h2>
+        <h2 className="text-slate-500">{breakLs}</h2>
       </div>
     </div>
   );
