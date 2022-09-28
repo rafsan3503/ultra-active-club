@@ -3,8 +3,8 @@ import React from 'react';
 const Avatar = () => {
     return (
       <div>
-        <div class="avatar online">
-          <div class="w-16 rounded-full">
+        <div className="avatar online">
+          <div className="w-16 rounded-full">
             <img alt="" src="https://placeimg.com/192/192/people" />
           </div>
         </div>

@@ -4,12 +4,19 @@ import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import Stats from '../Stats/Stats';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useEffect, useState } from 'react';
 
-const UserDetails = () => {
+const UserDetails = ({ exerciseTime }) => {
+  const [breakLs, setBreakLs] = useState(0);
   const getValue = (e) => {
     localStorage.setItem("break-time", e.target.innerText);
-    return e.target.innerText;
+    setBreakLs(e.target.innerText);
   };
+
+  useEffect(() => {
+    const savedValue = localStorage.getItem("break-time");
+    setBreakLs(savedValue);
+  }, []);
   return (
     <div>
       <Avatar></Avatar>
@@ -18,7 +25,10 @@ const UserDetails = () => {
 
       <BreakDetails getValue={getValue}></BreakDetails>
 
-      <ExerciseDetails getValue={getValue}></ExerciseDetails>
+      <ExerciseDetails
+        breakLs={breakLs}
+        exerciseTime={exerciseTime}
+      ></ExerciseDetails>
       <ToastContainer></ToastContainer>
       <button
         onClick={() => toast("Congratulations!! activity complete")}
