@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 
-const Exercises = ({ getExerciseTime }) => {
+const Exercises = ({ getExerciseTime, cartText }) => {
   const [exercises, setExercises] = useState([]);
   useEffect(() => {
     fetch("exercise.json")
@@ -15,6 +15,7 @@ const Exercises = ({ getExerciseTime }) => {
           key={exercise.id}
           getExerciseTime={getExerciseTime}
           exercise={exercise}
+          cartText={cartText}
         ></Exercise>
       ))}
     </div>

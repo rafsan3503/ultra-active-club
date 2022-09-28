@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-
-const Exercise = ({ exercise, getExerciseTime }) => {
+const Exercise = ({ exercise, getExerciseTime, cartText }) => {
   return (
     <div className="mt-10">
       <div className="card bg-base-100 shadow-xl">
@@ -20,7 +18,7 @@ const Exercise = ({ exercise, getExerciseTime }) => {
               onClick={() => getExerciseTime(exercise.seconds)}
               className="btn btn-outline"
             >
-              Add To Cart
+              {cartText}
             </div>
           </div>
         </div>

@@ -3,9 +3,10 @@ import Exercises from '../Exercises/Exercise';
 import UserDetails from '../UserDetails/UserDetails';
 
 const Home = () => {
+    const [cartText, setCartText] = useState('Add to cart')
     const [exerciseTime, setExerciseTime] = useState(0);
     const getExerciseTime = (seconds) => {
-        setExerciseTime(seconds)
+      setExerciseTime(seconds + exerciseTime);
     }
     return (
       <div className="flex flex-col-reverse lg:flex-row">
@@ -14,7 +15,10 @@ const Home = () => {
             <h1 className="text-5xl text-left  font-bold">Goodlife-Exercise</h1>
             <p>Consider your fitness goals.Create a balanced routine.</p>
 
-            <Exercises getExerciseTime={getExerciseTime}></Exercises>
+            <Exercises
+              cartText={cartText}
+              getExerciseTime={getExerciseTime}
+            ></Exercises>
           </div>
         </div>
 
