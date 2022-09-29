@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/4 bg-slate-500 rounded-xl p-8">
+        <div className="w-full lg:w-1/4 shadow-lg rounded-xl p-8">
           <div className="md:sticky top-10">
             <UserDetails exerciseTime={exerciseTime}></UserDetails>
           </div>
