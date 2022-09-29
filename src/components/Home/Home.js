@@ -18,7 +18,7 @@ const Home = () => {
                 src={logo}
                 alt=""
               />
-              <h1 className="text-5xl text-left  font-bold">
+              <h1 className="text-3xl lg:text-5xl text-left  font-bold">
                 Goodlife-Exercise
               </h1>
             </div>

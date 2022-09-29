@@ -1,6 +1,6 @@
 const Exercise = ({ exercise, getExerciseTime, cartText }) => {
   return (
-    <div className="mt-10">
+    <div className="mt-10 w-full">
       <div className="card bg-base-100 shadow-xl">
         <figure>
           <img
