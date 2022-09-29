@@ -20,7 +20,7 @@ const Blog = () => {
 
           <div className="rounded-lg p-5 shadow-lg glass">
             <h1 className="text-2xl font-semibold">
-              What are the differences between props and state
+              What are the differences between props and state?
             </h1>
             <p>
               Props are used to pass data from one component to another. The

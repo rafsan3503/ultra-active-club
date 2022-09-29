@@ -11,7 +11,7 @@ const Stats = () => {
         </div>
         <div>
           <h2>
-            <span className="text-2xl font-bold">5.6</span>inch
+            <span className="text-2xl font-bold">5.6</span>
           </h2>
           <p>Height</p>
         </div>
